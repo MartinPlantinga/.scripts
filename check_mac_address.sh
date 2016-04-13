@@ -5,6 +5,10 @@
 # 1. the Matlab license is removed
 # 2. WIFI and VPN connections are removed
 
+# LOG
+# M. Plantinga (12 April 2016): 	file creation
+
+
 filepath="/home/ebox/.scripts/mac_verification"
 
 
