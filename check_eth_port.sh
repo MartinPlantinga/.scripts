@@ -53,9 +53,9 @@ else
 	# extract the line that contains the mac address and the old ethernet port name: eth_line_old
 	grep $mac_var $filepath/eth_settings > $filepath/eth_line_old
 
-	# copy and rename eth_line_old to eth_line_new and replace the old ethernet port name with eth0
+	# copy and rename eth_line_old to eth_line_new and replace the old ethernet port name with eth2
 	cp $filepath/eth_line_old $filepath/eth_line_new
-	sed -i "s/${eth_var}/eth0/g" $filepath/eth_line_new
+	sed -i "s/${eth_var}/eth2/g" $filepath/eth_line_new
 
 	# create variables of eth_line_old and eth_line_new
 	var_old_line=$(<$filepath/eth_line_old)
