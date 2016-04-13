@@ -11,7 +11,7 @@
 filepath='/home/ebox/.scripts/eth_port'						# obtaining eth name and mac address
 
 LAST_STATUS=$(tail filepath/log.txt -1)						#extract last line
-LAST_STATUS=${LAST_STATUS##*eth}								#extract last status
+LAST_STATUS=${LAST_STATUS##*eth}							#extract last status
 LAST_STATUS=$(echo $LAST_STATUS | cut -c3-40)				#remove first 2 characters
 
 if [ $last_status != "changed"]; then

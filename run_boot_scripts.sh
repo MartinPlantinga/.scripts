@@ -7,7 +7,7 @@
 # LOG
 # M. Plantinga (13 April 2016): 	script creation
 
-sudo /home/ebox/.scripts/check_mac_address.sh
-sudo /home/ebox/.scripts/check_eth_port.sh
+sudo /home/ebox/.scripts/mac_verification/check_mac_address.sh
+sudo /home/ebox/.scripts/eth_port/check_eth_port.sh
 
 exit 0
