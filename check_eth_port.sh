@@ -70,7 +70,7 @@ else
 
 	change_stat='changed'
 	return_var='1'
-	exit 1
+	# exit 1
 fi
 
 echo "$(date) $line $eth_var $change_stat" >> $filepath/log.txt
