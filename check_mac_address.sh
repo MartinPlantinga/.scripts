@@ -34,4 +34,6 @@ else
 	fi
 fi
 
+echo "$(date) $MAC_WLAN" >> $filepath/log.txt
+
 exit 0
