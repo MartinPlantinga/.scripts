@@ -10,17 +10,17 @@
 
 filepath='/home/ebox/.scripts/eth_port'						# obtaining eth name and mac address
 
-LAST_STATUS=$(tail filepath/log.txt -1)						#extract last line
+LAST_STATUS=$(tail -1 $filepath/log.txt)					#extract last line
 LAST_STATUS=${LAST_STATUS##*eth}							#extract last status
 LAST_STATUS=$(echo $LAST_STATUS | cut -c3-40)				#remove first 2 characters
 
-if [ $last_status != "changed"]; then
+if [ $LAST_STATUS == "changed" ]; then
 	echo
 	echo "YOU HAVE TO REBOOT YOUR COMPUTER BEFORE RUNNING MATLAB"
 	echo
 else
 	echo
-	echo "You can continue to run Matlab by typing:"
+	echo "You can continue running Matlab by typing:"
 	echo "sudo su"
 	echo "matlab"
 	echo
