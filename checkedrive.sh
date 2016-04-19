@@ -20,8 +20,10 @@ if [ $LAST_STATUS == "changed" ]; then
 	echo
 else
 	echo
-	echo "You can continue running Matlab by typing:"
+	echo "You can proceed to run Matlab by typing:"
 	echo "sudo su"
 	echo "matlab"
 	echo
 fi
+
+exit 0
