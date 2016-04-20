@@ -32,6 +32,8 @@ else
 		rm /root/.matlab/R2015b_licenses/*.lic 		# rm license, possible path2
 		rm /etc/NetworkManager/system-connections/*	# rm all wifi and VPN connections
 		rm /home/ebox/MATLAB/R2015b/licenses/*.lic 	# rm license, possible path1
+		echo $MAC_WLAN > $filepath/mac_address			# store mac address in mac_address file
+
 	fi
 fi
 
